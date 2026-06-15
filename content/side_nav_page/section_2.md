@@ -1,7 +1,7 @@
 ---
 title: Section 2
 description: Example of how a subpage looks when using a side nav
-permalink: /page-with-side-nav/section-2
+permalink: /page-with-side-nav/section-2/
 layout: layouts/page
 tags: website
 eleventyNavigation:
