@@ -149,3 +149,11 @@ dedication](https://creativecommons.org/publicdomain/zero/1.0/) as indicated in 
 All contributions to this project will be released under the CC0 dedication. By
 submitting a pull request or issue, you are agreeing to comply with this waiver
 of copyright interest.
+ 
+ ## Codeowners 
+ The contents of this repository are managed by {responsible organization(s)}. Those responsible for the code and documentation in this repository can be found in [COMMUNITY.md](COMMUNITY.md). 
+ 
+ ### Software Bill of Materials (SBOM) 
+A Software Bill of Materials (SBOM) is a formal record containing the details and supply chain relationships of various components used in building software.
+In the spirit of [Executive Order 14028 - Improving the Nation's Cyber Security](https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/information-technology-category/it-security/executive-order-14028), a SBOM for this repository is provided here: https://github.com/{repo_org}/{repo_name}/network/dependencies.
+For more information and resources about SBOMs, visit: https://www.cisa.gov/sbom.
