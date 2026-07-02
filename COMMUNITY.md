@@ -71,6 +71,13 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more details on the release process.
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/haseebmalik18">
+                    <img src="https://avatars.githubusercontent.com/u/118837269?v=4" width="100;" alt="haseebmalik18"/>
+                    <br />
+                    <sub><b>Haseeb Malik</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/decause-gov">
                     <img src="https://avatars.githubusercontent.com/u/107957201?v=4" width="100;" alt="decause-gov"/>
                     <br />
