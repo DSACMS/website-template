@@ -12,5 +12,5 @@ eleventyNavigation:
 sidenav: true
 sticky_sidenav: true
 ---
-This is an example of how a subpage looks when using a side nav
 
+This is an example of how a subpage looks when using a side nav

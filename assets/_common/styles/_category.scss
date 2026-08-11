@@ -1,22 +1,21 @@
 @use 'colors' as *;
-@use 'uswds-core' as * ;
+@use 'uswds-core' as *;
 
 .section {
-
   .section--title {
     font-family: family('heading');
-    font-size: font-size('heading',12);
-    line-height: line-height('sans',3);
+    font-size: font-size('heading', 12);
+    line-height: line-height('sans', 3);
     margin: 0;
-    font-weight:bold;
+    font-weight: bold;
     color: $color-body-dark;
   }
 
   .section--subtitle {
     font-family: family('heading');
-    font-size: font-size('heading',lg);
+    font-size: font-size('heading', lg);
     font-weight: font-weight('semibold');
-    line-height: line-height('sans',4);
+    line-height: line-height('sans', 4);
     color: $color-body-dark;
   }
 
@@ -45,7 +44,6 @@
 // .category--validate--title { border-color: $color-red; }
 // .category--decide--title { border-color: $color-green; }
 
-
 .category--fundamentals,
 .intro-header {
   background-color: $color-blue-dark;
@@ -72,38 +70,43 @@
     }
   }
   .section--inbound {
-      .grid-col-8
-      { border-color: $color-blue; }
-      .grid-col-4 {
-        border-color: lighten( $color-blue, 25% )
-      }
+    .grid-col-8 {
+      border-color: $color-blue;
     }
-  .section--outbound {
-    .grid-col-8
-    { border-color: $color-gold; }
     .grid-col-4 {
-      border-color: lighten( $color-gold, 25% )
+      border-color: lighten($color-blue, 25%);
+    }
+  }
+  .section--outbound {
+    .grid-col-8 {
+      border-color: $color-gold;
+    }
+    .grid-col-4 {
+      border-color: lighten($color-gold, 25%);
     }
   }
   .section--growing {
-    .grid-col-8
-    { border-color: $color-green; }
+    .grid-col-8 {
+      border-color: $color-green;
+    }
     .grid-col-4 {
-      border-color: lighten( $color-green, 25% )
+      border-color: lighten($color-green, 25%);
     }
   }
   .section--resources {
-    .grid-col-8
-    { border-color: $color-red; }
+    .grid-col-8 {
+      border-color: $color-red;
+    }
     .grid-col-4 {
-      border-color: lighten( $color-red, 25% )
+      border-color: lighten($color-red, 25%);
     }
   }
   .section--about {
-    .grid-col-8
-    { border-color: $color-blue-dark; }
+    .grid-col-8 {
+      border-color: $color-blue-dark;
+    }
     .grid-col-4 {
-      border-color: lighten( $color-blue-dark, 25% )
+      border-color: lighten($color-blue-dark, 25%);
     }
     .section--header .section--subtitle,
     .section--header .section--title,
@@ -118,7 +121,8 @@
     .section--header {
       margin-bottom: 0;
     }
-    .grid-col-8, .grid-col-4 {
+    .grid-col-8,
+    .grid-col-4 {
       border-top-width: 8px;
       border-top-style: solid;
     }
@@ -132,14 +136,12 @@
     }
     .section-listing {
       li {
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
         list-style-type: none;
       }
     }
   }
 }
-
-
 
 @media screen and (max-width: 600px) {
   .layout--introduction {

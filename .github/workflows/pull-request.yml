@@ -2,9 +2,10 @@ name: pull request
 
 on: [pull_request]
 
+# Least privilege: these jobs only build, lint and test. Nothing commits or
+# writes to the PR, so GITHUB_TOKEN does not need write access.
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   build:
@@ -63,7 +64,6 @@ jobs:
           node-version: 18
       - run: npm run test:html-validation
 
-
   check_links:
     needs: [build]
     name: Check all links
@@ -92,3 +92,17 @@ jobs:
         run: npm install
       - name: Run eslint
         run: npm run lint
+
+      - name: Check formatting
+        id: format_check
+        # Runs even when eslint failed, so a PR gets both reports in one go.
+        if: ${{ !cancelled() }}
+        run: npm run format:check
+
+      # `prettier --check` only lists file names, so re-run it in write mode to
+      # print the actual diff. This writes to the runner's temporary workspace
+      # only: nothing is committed or pushed, the trigger is `pull_request` (not
+      # `pull_request_target`), and GITHUB_TOKEN is read-only.
+      - name: Show required formatting changes
+        if: ${{ failure() && steps.format_check.outcome == 'failure' }}
+        run: npm run format

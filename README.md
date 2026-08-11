@@ -1,8 +1,11 @@
 # CMS OSPO Website Template
+
 A template repository to set up a HTML/CSS/JS/Markdown/USWDS/11ty website
 
 ## About the project
+
 This repository serves as a template for the CMS OSPO's static website stack:
+
 - HTML/CSS/Javascript
 - Markdown for content
 - 11ty for Static Site Generation
@@ -12,6 +15,7 @@ This repository serves as a template for the CMS OSPO's static website stack:
 This template is a fork from the 18F/guides repository. The repository documentation can be used as a resource: [https://github.com/18F/guides?tab=readme-ov-file](https://github.com/18F/guides?tab=readme-ov-file)
 
 Other applications of this template include:
+
 - CMS OSPO [metrics website](https://dsacms.github.io/metrics) and [repository](https://github.com/DSACMS/metrics)
 - CMS OSPO [ospo-guide website](https://dsacms.github.io/ospo-guide/) and [repository](https://github.com/DSACMS/ospo-guide)
 - CMS OSPO [SHARE IT Act Landing Page](https://dsacms.github.io/share-it-act-lp/) and [repository](https://github.com/DSACMS/share-it-act-lp)
@@ -37,6 +41,7 @@ TODO: Good to include since this is an agency-led project -->
 A list of core team members responsible for the code and documentation in this repository can be found in [COMMUNITY.md](COMMUNITY.md).
 
 ## Repository Structure
+
 ```
 .
 ├── _data          # Data directory

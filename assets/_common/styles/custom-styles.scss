@@ -1,16 +1,16 @@
 @use '../../_common/styles/brand-colors' as *;
-@use 'uswds-core' as * ;
+@use 'uswds-core' as *;
 
 $bullet-spacing: 1.25rem;
 
 // Highlight TODO links to make them visually standout
 .todo-link,
-a[href*="/TODO/"] {
+a[href*='/TODO/'] {
   color: color('blue-80v') !important;
   background-color: color('gold-10v') !important;
   padding: 0 units(0.5);
 
-  &:after  {
+  &:after {
     content: ' [link TBD]';
   }
 
@@ -19,7 +19,7 @@ a[href*="/TODO/"] {
   }
 }
 .todo-link.usa-link--external:after,
-a[href*="/TODO/"].usa-link--external:after {
+a[href*='/TODO/'].usa-link--external:after {
   background-color: inherit;
   background-image: none;
   margin-left: 0;
@@ -29,7 +29,12 @@ a[href*="/TODO/"].usa-link--external:after {
 }
 
 // Set heading colors
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: color('primary-darker');
 }
 
@@ -62,10 +67,14 @@ h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
   }
 
-  h2, h3, h4, h5, h6 {
-      // prevent orphans and use balance if pretty is not available
-      text-wrap: balance;
-      text-wrap: pretty;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // prevent orphans and use balance if pretty is not available
+    text-wrap: balance;
+    text-wrap: pretty;
   }
 
   h2 {
@@ -74,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: units(0);
       &.derisking {
         padding-top: units(1);
-        border-top: 1px solid #1C304A;
+        border-top: 1px solid #1c304a;
       }
     }
   }
@@ -83,7 +92,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
   }
 }
-
 
 // usa-section overrides
 .hero .section__heading--white {
@@ -159,7 +167,7 @@ h2.heading-md {
 /* checklists and key questions */
 .guide-checklist,
 .key-questions {
-  @include u-font('sans','md');
+  @include u-font('sans', 'md');
   color: color('white');
   padding: units(1);
 }
@@ -175,7 +183,7 @@ h2.heading-md {
 .guide-checklist + ul,
 .key-questions + ul {
   background-color: color('blue-5');
-  margin-top:0;
+  margin-top: 0;
   padding-top: units(1);
   padding-right: units(2);
   padding-bottom: units(1);
