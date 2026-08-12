@@ -89,14 +89,16 @@ jobs:
         with:
           node-version: 18
       - name: Install node dependencies
+        id: install
         run: npm install
       - name: Run eslint
         run: npm run lint
 
       - name: Check formatting
         id: format_check
-        # Runs even when eslint failed, so a PR gets both reports in one go.
-        if: ${{ !cancelled() }}
+        # Runs even when eslint failed, so a PR gets both reports in one go,
+        # but not when the install failed and there is no Prettier to run.
+        if: ${{ !cancelled() && steps.install.outcome == 'success' }}
         run: npm run format:check
 
       # `prettier --check` only lists file names, so re-run it in write mode to
