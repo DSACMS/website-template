@@ -11,7 +11,7 @@
 const headingLinks = (slug, _, state, index) => {
   // We also need to find the index of the element that closes the header. We'll
   // put our link stuff right before that.
-  let closeIndex   =   index + 1;
+  let closeIndex = index + 1;
   while (state.tokens[closeIndex].type !== 'heading_close') {
     closeIndex += 1;
   }
