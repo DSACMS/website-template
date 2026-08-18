@@ -1,0 +1,21 @@
+# Liquid / Nunjucks templates.
+#
+# Prettier's HTML parser is not template-aware: it treats `{% ... %}` and
+# `{{ ... }}` as ordinary text and rewraps them across lines, which breaks the
+# build. It also cannot parse a dynamic tag name (`<{{ page_title_tag }}>`,
+# _includes/layouts/page.html) or an unquoted attribute holding a Liquid
+# expression (_includes/meta.html).
+#
+# Rendered whitespace is significant here too, and Prettier does not know which
+# of these tags are whitespace-controlling ({%- -%}).
+*.html
+*.njk
+
+# Build output
+_site/
+
+# Generated
+_data/assetPaths.json
+
+# Managed by npm; reformatting causes churn on every install
+package-lock.json
